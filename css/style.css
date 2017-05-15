@@ -1,0 +1,14 @@
+body {
+  background: url("../img/weather-menu.jpg") no-repeat center center fixed;
+  background-size: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.title h1 {
+    font-family: 'Amatic SC', cursive;
+    color: #44679F;
+}
