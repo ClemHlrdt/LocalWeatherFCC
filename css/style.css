@@ -1,14 +1,20 @@
 body {
-  background: url("../img/weather-menu.jpg") no-repeat center center fixed;
-  background-size: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url("../img/weather-menu.jpg") no-repeat center center fixed;
+    background-size: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
 
 .title h1 {
     font-family: 'Amatic SC', cursive;
-    color: #44679F;
+    color: #112D4E;
+    font-size: 75px;
+    margin-top: 25px;
+}
+
+.jumbotron {
+    background-color: #F9F7F7;
+    opacity: 0.90;
 }
