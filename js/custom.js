@@ -1,6 +1,8 @@
 var x = document.getElementById("location");
 
-
+$(document).ready(function() {
+    getLocation();
+});
 var latitude, longitude;
 $('#location').click(getLocation); // click to call function getLocation
 
@@ -30,7 +32,8 @@ var getWeather = function (data) {
     var location = (data.location.name);
     var tempC = (data.current.temp_c);
     var condition = (data.current.condition.text);
-    $('#city').text("City: " + location);
+    $('#city').append(location);
+    /*$('#city').text("City: " + location);*/
     $('#temp').text("Current temperature: " + tempC + "°C");
     $('#condition').text("Current condition: " + condition );
 
