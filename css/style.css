@@ -17,6 +17,16 @@ body {
 }
 
 .jumbotron {
-    background-color: #F9F7F7;
+    background-color: #DBE2EF;
     opacity: 0.90;
+    min-width: 800px;
+}
+
+.clear-weather {
+    background: url("../img/clear-weather.jpg") no-repeat left center fixed;
+    background-size: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }

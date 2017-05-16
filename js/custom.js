@@ -34,5 +34,4 @@ var getWeather = function (data) {
     $('#temp').text("Current temperature: " + tempC + "°C");
     $('#condition').text("Current condition: " + condition );
 
-
 };
