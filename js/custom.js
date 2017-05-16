@@ -1,6 +1,6 @@
 var x = document.getElementById("location");
 
-var url = "https://api.apixu.com/v1/current.json?key=07941261e9294bdfa75164128171605&q=";
+
 var latitude, longitude;
 $('#location').click(getLocation); // click to call function getLocation
 
@@ -14,19 +14,25 @@ function getLocation() {
     }
 }
 function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude +
-    "<br>Longitude: " + position.coords.longitude;
+    /*x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;*/
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
     //console.log (latitude + "+" + longitude);
+    var url ="";
+    url = "https://api.apixu.com/v1/current.json?key=07941261e9294bdfa75164128171605&q=";
     url += (latitude + "," + longitude);
     console.log(url);
     $.getJSON(url, getWeather, 'jsonp');
 }
 
 var getWeather = function (data) {
+    var location = (data.location.name);
     var tempC = (data.current.temp_c);
-    alert(tempC);
-    $('#temp').text(tempC);
+    var condition = (data.current.condition.text);
+    $('#city').text("City: " + location);
+    $('#temp').text("Current temperature: " + tempC + "°C");
+    $('#condition').text("Current condition: " + condition );
+
 
 };
