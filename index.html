@@ -11,40 +11,61 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
     <div class="container">
         <div class="row justify-content-center">
             <div class=" page-header title text-center">
-                <h1>Local Weather</h1>
+                <h1 class="element">Local Weather</h1>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="jumbotron">
                 <!--<h1 class="display-3">Hello, world!</h1>-->
-                <p class="lead">Welcome to my weather app.</p>
-                <hr class="my-4">
-                <p class="lead text-center">
-                    <!--<a id="location" class="btn btn-primary btn-lg" href="#" role="button">Get Location</a>-->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md element"><img id="icon" height="42" width="42"></div>
-                            <!--<p id="condition" class=""></p>-->
-                            <div class="col-md element"><p id="city">"Enable location to get started"</p></div>
-                            <div class="col-md element"><p id="temp"></p></div>
+                <div class="container">
+                    <!----------------------------------------- 1st row  --------------------------------------------------->
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="element" id="city"></h2>
                         </div>
-
-
-
-
                     </div>
+                    <!----------------------------------------- 2nd row  --------------------------------------------------->
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h1 class="element">Now Forecast</h1>
+                        </div>
+                    </div>
+                    <!----------------------------------------- 3rd row  --------------------------------------------------->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="col-sm"><img class="element" id="icon"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="col-sm  text-center"><p class="element" id="condition"></p></div>
+                        </div>
+                    </div>
+                    <!----------------------------------------- 4th row  --------------------------------------------------->
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="col-sm">
+                                <button id="tempC" class="btn btn-secondary" ></button>
+                                <button id="tempF" class="btn btn-secondary" ></button>
+                                <!--<p class="element" id="temp"></p>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
-                </p>
             </div>
         </div>
     </div>
@@ -53,6 +74,7 @@
 <script src="js/tether.min.js" charset="utf-8"></script>
 <script src="js/bootstrap.js" charset="utf-8"></script>
 <script src="js/modernizr-custom.js" charset="utf-8"></script>
+<script src="js/tippy.min.js"></script>
 <script src="js/custom.js" charset="utf-8"></script>
 
 

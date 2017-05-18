@@ -16,19 +16,6 @@ body {
     margin-top: 25px;
 }
 
-.jumbotron {
-    background-color: #DBE2EF;
-    opacity: 0.90;
-    min-width: 800px;
-}
-
-.element{
-    position: relative;
-     top: 0.2em;
-     right: 0.2em;
-     background-color: #ffff00;
-}
-
 img {
     display: none;
 }
@@ -36,3 +23,13 @@ img {
 img[src] {
    display: block;
  }
+
+ #icon{
+     width: 64px;
+     height: auto;
+     margin: 0 auto;
+ }
+
+.hidden {
+    display: none;
+}
