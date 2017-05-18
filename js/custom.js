@@ -2,7 +2,6 @@ var x = document.getElementById("location");
 
 $(document).ready(function() {
     getLocation();
-    //$('.jumbotron').addClass('hidden');
     $('.jumbotron').hide();
 });
 var latitude, longitude;
@@ -26,7 +25,7 @@ function showPosition(position) {
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
     //console.log (latitude + "+" + longitude);
-    var url ="";
+    var url = "";
     url = "https://api.apixu.com/v1/current.json?key=07941261e9294bdfa75164128171605&q=";
     url += (latitude + "," + longitude);
     console.log(url);
@@ -34,13 +33,13 @@ function showPosition(position) {
 }
 
 //Function getWeather
-var getWeather = function (data) {
+var getWeather = function(data) {
     $('.jumbotron').delay('slow').show('400', function() {
         $('.element').addClass('animated pulse');
     });
     var location = (data.location.name);
-     tempC = (data.current.temp_c);
-     tempCFull = tempC + "°C";
+    tempC = (data.current.temp_c);
+    tempCFull = tempC + "°C";
     var condition = (data.current.condition.text);
     var icon = (data.current.condition.icon).substr(29);
     var link = "img/" + icon;
@@ -48,9 +47,9 @@ var getWeather = function (data) {
     tempF = (tempC * 1.8 + 32) + "°F";
     console.log(tempF);
     $('#city').text(location);
-    $('#tempC').text(tempCFull );
+    $('#tempC').text(tempCFull);
     $('#tempF').text(tempF).hide();
-    $('#condition').text("Current condition: " + condition );
+    $('#condition').text("Current condition: " + condition);
     $('#icon').attr('src', link);
 };
 
