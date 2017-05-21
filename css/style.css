@@ -12,6 +12,7 @@ body {
 .jumbotron {
     background-color: transparent;
 }
+
 .title h1 {
     font-family: 'Amatic SC', cursive;
     color: #112D4E;
@@ -24,29 +25,40 @@ img {
 }
 
 img[src] {
-   display: block;
- }
+    display: block;
+}
 
- #icon{
-     width: 64px;
-     height: auto;
-     margin: 0 auto;
- }
+#icon {
+    width: 64px;
+    height: auto;
+    margin: 0 auto;
+}
 
- .element{
-     font-family: 'Raleway', sans-serif;
- }
+.element {
+    font-family: 'Raleway', sans-serif;
+}
+
 
 /* This only works with JavaScript,
 if it's not present, don't show loader */
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
 .se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url("../img/Preloader_1.gif") center no-repeat #fff;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("../img/Preloader_1.gif") center no-repeat #fff;
 }
